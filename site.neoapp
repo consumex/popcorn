@@ -1,0 +1,2042 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application>
+	<AppTitle>Popcorn</AppTitle>
+	<AppShortName>Popcorn</AppShortName>
+	<Version>2</Version>
+	<Description>Plantilla 05 A1web Editable</Description>
+	<Variables>[COLORPAGINA],[NUM],[TIEMPOLIMITE],[TIEMPOLIMITEFIN],[TIMER]</Variables>
+	<VariablesScanned>True</VariablesScanned>
+	<PageWidth>900</PageWidth>
+	<PageHeight>600</PageHeight>
+	<AutoSizeWidth>True</AutoSizeWidth>
+	<AutoSizeHeight>True</AutoSizeHeight>
+	<HideScrollbars>False</HideScrollbars>
+	<PublishPlatform>WebApp</PublishPlatform>
+	<EmptyBuildFolder>False</EmptyBuildFolder>
+	<WebBuildTarget>D:\UniServerZ\www\popcorn1</WebBuildTarget>
+	<LanguageCode>es</LanguageCode>
+	<MinifySource>True</MinifySource>
+	<MobileOSTypes>[AndroidOS,iOS,WindowsPhoneOS]</MobileOSTypes>
+	<WindowState>normal</WindowState>
+	<TitleBar>True</TitleBar>
+	<Sizeable>True</Sizeable>
+	<MaximizeBtn>False</MaximizeBtn>
+	<MinimizeBtn>True</MinimizeBtn>
+	<SystemMenu>True</SystemMenu>
+	<ContextMenu>False</ContextMenu>
+	<AlwaysOnTop>False</AlwaysOnTop>
+	<ShowInTaskbar>True</ShowInTaskbar>
+	<SingleInstance>False</SingleInstance>
+	<ChromeKioskMode>False</ChromeKioskMode>
+	<Components>
+		<FunctionList name="Subroutines"/>
+		<LibraryList name="Libraries"/>
+		<PageList name="Main">
+			<Components>
+				<Page id="index">
+					<style>background-color:#A8A8A8</style>
+					<pageenter>.Delay 20000
+
+.StopSound &quot;intro1.mp3&quot;
+
+.GotoPage &quot;Inicio&quot;</pageenter>
+					<Components>
+						<Image id="ImageIntro">
+							<left>258px</left>
+							<top>14px</top>
+							<width>388px</width>
+							<height>385px</height>
+							<source>D:\UniServerZ\www\imagenes\Movies and Popcorn.png</source>
+						</Image>
+						<Paragraph id="Paragraph15">
+							<left>-1px</left>
+							<top>536px</top>
+							<width>901px</width>
+							<height>54px</height>
+							<style>font-size:9pt;font-style:normal;text-align:center</style>
+							<text>Ve películas&amp;nbsp;cuando y donde quieras.</text>
+						</Paragraph>
+						<PushButton id="PushButton14">
+							<left>361px</left>
+							<top>469px</top>
+							<width>227px</width>
+							<height>53px</height>
+							<caption>Entrar</caption>
+							<click>GotoPage &quot;inicio&quot;</click>
+						</PushButton>
+						<Headline id="Headline3">
+							<left>-1px</left>
+							<top>431px</top>
+							<width>901px</width>
+							<height>38px</height>
+							<style>font-size:10pt;text-align:center</style>
+							<text>Bienvenido(s)</text>
+							<kind>h3</kind>
+						</Headline>
+						<Paragraph id="Paragraph8">
+							<left>-1px</left>
+							<top>374px</top>
+							<width>902px</width>
+							<height>52px</height>
+							<style>color:#FF0000;font-size:24pt;font-weight:normal;text-align:center</style>
+							<text>PopCorn</text>
+						</Paragraph>
+					</Components>
+				</Page>
+				<Page id="inicio">
+					<style>background-color:#383838</style>
+					<background_masterpage>MasterPage</background_masterpage>
+					<pageenter>HideObject &quot;Image1&quot; &quot;flip&quot; 50
+
+ShowObject &quot;Image1&quot; &quot;flip&quot; 50
+
+
+
+ShowObject &quot;Image2&quot; &quot;flash&quot; 50
+
+
+SetVar [PAGINA1] &quot;Inicio&quot;
+SetVar [PAGINA2] &quot;Demo&quot;
+SetVar [PAGINA3] &quot;Nosotros&quot;
+SetVar [PAGINA4] &quot;Soporte&quot;
+SetVar [PAGINA5] &quot;Politicas&quot;
+SetVar [PAGINA6] &quot;Precio&quot;</pageenter>
+					<Components>
+						<Image id="Image2">
+							<left>59px</left>
+							<top>163px</top>
+							<width>352px</width>
+							<height>292px</height>
+							<source>D:\UniServerZ\www\imagenes\Movies and Popcorn.png</source>
+						</Image>
+						<Paragraph id="Paragraph2">
+							<left>60px</left>
+							<top>455px</top>
+							<width>720px</width>
+							<height>57px</height>
+							<style>color:#FFFFFF;font-size:10pt</style>
+							<text>Ve películas&amp;nbsp;cuando y donde quieras.&lt;br&gt;</text>
+						</Paragraph>
+						<Paragraph id="Paragraph13">
+							<left>468px</left>
+							<top>157px</top>
+							<width>381px</width>
+							<height>281px</height>
+							<style>color:#FFFFFF;font-size:10pt</style>
+							<text>Popcorn es un servicio de trasferencia de contenido de video por demanda. &lt;br&gt;&lt;br&gt;Popcorn no almacena ningun contenido mostrado aqui es un buscado avanzado el cual localiza el contenido de video.</text>
+						</Paragraph>
+						<Paragraph id="Paragraph1">
+							<left>56px</left>
+							<top>116px</top>
+							<width>733px</width>
+							<height>52px</height>
+							<style>color:#FF0000;font-size:24pt</style>
+							<text>PopCorn</text>
+						</Paragraph>
+						<Rectangle id="Rectangle2">
+							<left>-1px</left>
+							<top>525px</top>
+							<width>902px</width>
+							<height>76px</height>
+							<style>fill:#000000;stroke:black;stroke-width:1px</style>
+							<corner_radius>0</corner_radius>
+						</Rectangle>
+						<Paragraph id="Paragraph12">
+							<left>3px</left>
+							<top>545px</top>
+							<width>899px</width>
+							<height>48px</height>
+							<style>color:#FFFFFF;font-size:8pt;text-align:center</style>
+							<text>Compatible para tus dispositivos desde tu PC, Mac, IPhone, IPad,&amp;nbsp;SmartTv, Smartphone o Tablet.</text>
+						</Paragraph>
+					</Components>
+				</Page>
+				<Page id="apps">
+					<style>background-color:#707070</style>
+					<background_masterpage>MasterPage</background_masterpage>
+					<Components>
+						<Headline id="Headline17">
+							<left>102px</left>
+							<top>103px</top>
+							<width>685px</width>
+							<height>64px</height>
+							<text>Apps</text>
+							<kind>h2</kind>
+						</Headline>
+						<Paragraph id="Paragraph19">
+							<left>38px</left>
+							<top>182px</top>
+							<width>741px</width>
+							<height>411px</height>
+							<style>font-size:10pt</style>
+							<text>Popcorn&amp;nbsp;cuenta con apps compatibles con tu sistema Android y Ios&lt;br&gt;&lt;br&gt;&lt;br&gt;</text>
+						</Paragraph>
+						<Image id="Image11">
+							<left>27px</left>
+							<top>100px</top>
+							<width>49px</width>
+							<height>58px</height>
+							<source>D:\UniServerZ\www\imagenes\Code-Optimization-64x64.png</source>
+						</Image>
+						<PushButton id="PushButton17">
+							<left>273px</left>
+							<top>245px</top>
+							<width>268px</width>
+							<height>57px</height>
+							<caption>Google Play</caption>
+							<icon>glyphicon-cloud-download</icon>
+							<click>AlertBox &quot;Sistemas Android&quot; &quot;Disculpe las molestias pero aun no tenemos terminada esta app.&quot; &quot;&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton18">
+							<left>273px</left>
+							<top>310px</top>
+							<width>268px</width>
+							<height>57px</height>
+							<caption>App Store</caption>
+							<icon>glyphicon-cloud-download</icon>
+							<click>AlertBox &quot;Sistemas ios&quot; &quot;Disculpe las molestias pero aun no tenemos terminada esta app.&quot; &quot;&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton19">
+							<left>272px</left>
+							<top>374px</top>
+							<width>268px</width>
+							<height>57px</height>
+							<caption>Windows</caption>
+							<icon>glyphicon-cloud-download</icon>
+							<click>AlertBox &quot;Sistemas Windows&quot; &quot;Disculpe las molestias pero no tenemos este programa aun.&quot; &quot;&quot;</click>
+						</PushButton>
+					</Components>
+				</Page>
+				<Page id="Extrenos">
+					<style>background-color:#383838</style>
+					<background_masterpage>MasterPage</background_masterpage>
+					<Components>
+						<PushButton id="PushButton54">
+							<left>214px</left>
+							<top>491px</top>
+							<width>187px</width>
+							<height>41px</height>
+							<style>font-size:8pt</style>
+							<caption>Hitman: Agente 47</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/7586adb1fffb456a9c36e56152724dcc&quot;
+SetVar [NOMBREPELICULA] &quot;Hitman: Agente 47&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton55">
+							<left>13px</left>
+							<top>491px</top>
+							<width>189px</width>
+							<height>41px</height>
+							<style>font-size:8pt</style>
+							<caption>Los Juegos del Hambre: Sinsajo parte 2</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/ded71ff079a8416b9e5e45d3e842d6e3&quot;
+SetVar [NOMBREPELICULA] &quot;Los Juegos del Hambre: Sinsajo parte 2&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<Container id="Container13">
+							<left>15px</left>
+							<top>150px</top>
+							<width>185px</width>
+							<height>333px</height>
+							<style>background-color:#707070;border-style:solid;border-width:1px</style>
+							<Components>
+								<IFrame id="IFrame15">
+									<left>9px</left>
+									<top>8px</top>
+									<width>160px</width>
+									<height>309px</height>
+									<style>border-color:#000000</style>
+									<source>https://1.bp.blogspot.com/-Qa5S4kLgDfk/VlSOn4-YauI/AAAAAAAAB8A/CHnRvGlvdrk/s275/los-juegos-del-hambre-sinsajo-parte-2.jpg</source>
+								</IFrame>
+							</Components>
+						</Container>
+						<Container id="Container14">
+							<left>212px</left>
+							<top>153px</top>
+							<width>185px</width>
+							<height>333px</height>
+							<style>background-color:#707070;border-style:solid;border-width:1px</style>
+							<Components>
+								<IFrame id="IFrame16">
+									<left>9px</left>
+									<top>8px</top>
+									<width>160px</width>
+									<height>309px</height>
+									<style>border-color:#000000</style>
+									<source>https://2.bp.blogspot.com/-RYSXrD2nSRQ/VdoNL75wiDI/AAAAAAAAA3I/RkFDQwOzD8U/s275/hitman-agente-47.jpg</source>
+								</IFrame>
+							</Components>
+						</Container>
+						<Container id="Container15">
+							<left>409px</left>
+							<top>155px</top>
+							<width>185px</width>
+							<height>333px</height>
+							<style>background-color:#707070;border-style:solid;border-width:1px</style>
+							<Components>
+								<IFrame id="IFrame17">
+									<left>9px</left>
+									<top>8px</top>
+									<width>160px</width>
+									<height>309px</height>
+									<style>border-color:#000000</style>
+									<source>http://3.bp.blogspot.com/-R5Rs-_CkbEc/VP9P0YPSbkI/AAAAAAAAe4k/QtQu664Gsm4/s275/hotel-transylvania-2.jpg</source>
+								</IFrame>
+							</Components>
+						</Container>
+						<PushButton id="PushButton56">
+							<left>408px</left>
+							<top>491px</top>
+							<width>187px</width>
+							<height>41px</height>
+							<style>font-size:8pt</style>
+							<caption>Hotel Transylvania 2</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/4a9d2e22b247455f83daca0e1fbe26e4&quot;
+SetVar [NOMBREPELICULA] &quot;Hotel Transylvania 2&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<Container id="Container16">
+							<left>601px</left>
+							<top>155px</top>
+							<width>185px</width>
+							<height>333px</height>
+							<style>background-color:#707070;border-style:solid;border-width:1px</style>
+							<Components>
+								<IFrame id="IFrame18">
+									<left>9px</left>
+									<top>8px</top>
+									<width>160px</width>
+									<height>309px</height>
+									<style>border-color:#000000</style>
+									<source>http://3.bp.blogspot.com/-j-RY1QLCgH4/VaeEziiX7wI/AAAAAAAARYM/Cjr-U_BkItA/s275/carlitos-y-snoopy-la-pelicula-de-peanuts.jpg</source>
+								</IFrame>
+							</Components>
+						</Container>
+						<PushButton id="PushButton57">
+							<left>604px</left>
+							<top>491px</top>
+							<width>187px</width>
+							<height>41px</height>
+							<style>font-size:8pt</style>
+							<caption>Carlitos y Snoopy: La película de peanuts</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/e8ae6035503a49f495ba270abacb40d8&quot;
+SetVar [NOMBREPELICULA] &quot;Carlitos y Snoopy: La película de peanuts&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<Headline id="Headline23">
+							<left>15px</left>
+							<top>103px</top>
+							<width>772px</width>
+							<height>64px</height>
+							<style>color:#FFFFFF</style>
+							<text>Extrenos</text>
+							<kind>h2</kind>
+						</Headline>
+					</Components>
+				</Page>
+				<Page id="Accion">
+					<style>background-color:#383838</style>
+					<background_masterpage>MasterPage</background_masterpage>
+					<Components>
+						<PushButton id="PushButton20">
+							<left>214px</left>
+							<top>491px</top>
+							<width>187px</width>
+							<height>41px</height>
+							<style>font-size:8pt</style>
+							<caption>Interstellar</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/2985f48fbb98459f892d47c47ef28dd1&quot;
+SetVar [NOMBREPELICULA] &quot;Interstellar&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton22">
+							<left>13px</left>
+							<top>491px</top>
+							<width>189px</width>
+							<height>41px</height>
+							<style>font-size:8pt</style>
+							<caption>Ant-Man</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/005b4d4730b54ac798c3ee5460fa4ab9&quot;
+SetVar [NOMBREPELICULA] &quot;Ant-Man&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<Container id="Container1">
+							<left>15px</left>
+							<top>150px</top>
+							<width>185px</width>
+							<height>333px</height>
+							<style>background-color:#707070;border-style:solid;border-width:1px</style>
+							<Components>
+								<IFrame id="IFrame1">
+									<left>9px</left>
+									<top>8px</top>
+									<width>160px</width>
+									<height>309px</height>
+									<style>border-color:#000000</style>
+									<source>http://2.bp.blogspot.com/-5qGsvg-D99Q/VUo4yVGh43I/AAAAAAAAWO4/bInSvy9z7k4/s275/ant-man.jpg</source>
+								</IFrame>
+							</Components>
+						</Container>
+						<Container id="Container2">
+							<left>212px</left>
+							<top>153px</top>
+							<width>185px</width>
+							<height>333px</height>
+							<style>background-color:#707070;border-style:solid;border-width:1px</style>
+							<Components>
+								<IFrame id="IFrame2">
+									<left>9px</left>
+									<top>8px</top>
+									<width>160px</width>
+									<height>309px</height>
+									<style>border-color:#000000</style>
+									<source>http://1.bp.blogspot.com/-uh9BNFP8fq0/VF1KagXUSQI/AAAAAAAAAX8/yovfsPFjU5g/s275/interstellar.jpg</source>
+								</IFrame>
+							</Components>
+						</Container>
+						<Container id="Container3">
+							<left>409px</left>
+							<top>155px</top>
+							<width>185px</width>
+							<height>333px</height>
+							<style>background-color:#707070;border-style:solid;border-width:1px</style>
+							<Components>
+								<IFrame id="IFrame4">
+									<left>9px</left>
+									<top>8px</top>
+									<width>160px</width>
+									<height>309px</height>
+									<style>border-color:#000000</style>
+									<source>http://1.bp.blogspot.com/-EoFte4OhSoE/VUXVkrQUx7I/AAAAAAAABxQ/kkXhHlVdr_4/s275/los-4-fantasticos.jpg</source>
+								</IFrame>
+							</Components>
+						</Container>
+						<PushButton id="PushButton23">
+							<left>408px</left>
+							<top>491px</top>
+							<width>187px</width>
+							<height>41px</height>
+							<style>font-size:8pt</style>
+							<caption>Los 4 Fantasticos</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/09628e35691a4451ac01469ffedf562f&quot;
+SetVar [NOMBREPELICULA] &quot;Los 4 Fantasticos&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<Container id="Container4">
+							<left>601px</left>
+							<top>155px</top>
+							<width>185px</width>
+							<height>333px</height>
+							<style>background-color:#707070;border-style:solid;border-width:1px</style>
+							<Components>
+								<IFrame id="IFrame5">
+									<left>9px</left>
+									<top>8px</top>
+									<width>160px</width>
+									<height>309px</height>
+									<style>border-color:#000000</style>
+									<source>http://2.bp.blogspot.com/-Jh2zKSUHsyQ/VbLPNcBXe6I/AAAAAAAAW1g/uERhw6ZGSGM/s275/007-spectre.jpg</source>
+								</IFrame>
+							</Components>
+						</Container>
+						<PushButton id="PushButton24">
+							<left>604px</left>
+							<top>491px</top>
+							<width>187px</width>
+							<height>41px</height>
+							<style>font-size:8pt</style>
+							<caption>007 Spectre</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/af79c93a96bb45a49bc56c8855f4abdf&quot;
+SetVar [NOMBREPELICULA] &quot;007 Spectre&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<Headline id="Headline20">
+							<left>15px</left>
+							<top>103px</top>
+							<width>772px</width>
+							<height>47px</height>
+							<style>color:#FFFFFF</style>
+							<text>Películas de Acción</text>
+							<kind>h2</kind>
+						</Headline>
+					</Components>
+				</Page>
+				<Page id="Accion-2">
+					<style>background-color:#383838</style>
+					<background_masterpage>MasterPage</background_masterpage>
+					<Components>
+						<PushButton id="PushButton29">
+							<left>214px</left>
+							<top>491px</top>
+							<width>187px</width>
+							<height>41px</height>
+							<style>font-size:8pt</style>
+							<caption>The Avengers</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/b95865d972bf4434a3286e8b0eeed679&quot;
+SetVar [NOMBREPELICULA] &quot;The Avengers&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton30">
+							<left>13px</left>
+							<top>491px</top>
+							<width>189px</width>
+							<height>41px</height>
+							<style>font-size:8pt</style>
+							<caption>Mad Max: Fury road</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/4045d4ac9fa6499a891cef8847afd8ed&quot;
+SetVar [NOMBREPELICULA] &quot;Mad Max: Fury road&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<Container id="Container5">
+							<left>15px</left>
+							<top>150px</top>
+							<width>185px</width>
+							<height>333px</height>
+							<style>background-color:#707070;border-style:solid;border-width:1px</style>
+							<Components>
+								<IFrame id="IFrame7">
+									<left>9px</left>
+									<top>8px</top>
+									<width>160px</width>
+									<height>309px</height>
+									<style>border-color:#000000</style>
+									<source>http://4.bp.blogspot.com/-ZLLbnCIiiKQ/VRpUvrmn8bI/AAAAAAABDTw/S4XJow4lJxg/s275/mad-max-furia-en-el-camino.jpg</source>
+								</IFrame>
+							</Components>
+						</Container>
+						<Container id="Container6">
+							<left>212px</left>
+							<top>153px</top>
+							<width>185px</width>
+							<height>333px</height>
+							<style>background-color:#707070;border-style:solid;border-width:1px</style>
+							<Components>
+								<IFrame id="IFrame8">
+									<left>9px</left>
+									<top>8px</top>
+									<width>160px</width>
+									<height>309px</height>
+									<style>border-color:#000000</style>
+									<source>http://1.bp.blogspot.com/-MNUGTDhFMMk/T2ZnZiVAKzI/AAAAAAAACL4/1PqGo0AXSGQ/s275/los-vengadores.jpg</source>
+								</IFrame>
+							</Components>
+						</Container>
+						<Container id="Container7">
+							<left>409px</left>
+							<top>155px</top>
+							<width>185px</width>
+							<height>333px</height>
+							<style>background-color:#707070;border-style:solid;border-width:1px</style>
+							<Components>
+								<IFrame id="IFrame9">
+									<left>9px</left>
+									<top>8px</top>
+									<width>160px</width>
+									<height>309px</height>
+									<style>border-color:#000000</style>
+									<source>http://2.bp.blogspot.com/-wDQc4lo826g/U3brOGjNm4I/AAAAAAAABFc/KCGX6B-Myyw/s275/transformers-4-la-era-de-la-extincion.jpg</source>
+								</IFrame>
+							</Components>
+						</Container>
+						<PushButton id="PushButton31">
+							<left>408px</left>
+							<top>491px</top>
+							<width>187px</width>
+							<height>41px</height>
+							<style>font-size:8pt</style>
+							<caption>Transformers 4</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/ed2209445f6640e59b65ed8367a3bb01&quot;
+SetVar [NOMBREPELICULA] &quot;Transformers 4&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<Container id="Container8">
+							<left>601px</left>
+							<top>155px</top>
+							<width>185px</width>
+							<height>333px</height>
+							<style>background-color:#707070;border-style:solid;border-width:1px</style>
+							<Components>
+								<IFrame id="IFrame10">
+									<left>9px</left>
+									<top>8px</top>
+									<width>160px</width>
+									<height>309px</height>
+									<style>border-color:#000000</style>
+									<source>http://4.bp.blogspot.com/-cDs8_5rrXaI/Uz2aDqr6RsI/AAAAAAAAMA8/TIObmbttWC4/s275/x-men-dias-del-futuro-pasado.jpg</source>
+								</IFrame>
+							</Components>
+						</Container>
+						<PushButton id="PushButton32">
+							<left>604px</left>
+							<top>491px</top>
+							<width>187px</width>
+							<height>41px</height>
+							<style>font-size:8pt</style>
+							<caption>X-Men: Días del futuro pasado</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/2e2ad5531ed541bbbd689688924195fd&quot;
+SetVar [NOMBREPELICULA] &quot;X-Men: Días del futuro pasado&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<Headline id="Headline21">
+							<left>15px</left>
+							<top>103px</top>
+							<width>772px</width>
+							<height>64px</height>
+							<style>color:#FFFFFF</style>
+							<text>Acción</text>
+							<kind>h2</kind>
+						</Headline>
+					</Components>
+				</Page>
+				<Page id="Accion-3">
+					<style>background-color:#383838</style>
+					<background_masterpage>MasterPage</background_masterpage>
+					<Components>
+						<PushButton id="PushButton43">
+							<left>214px</left>
+							<top>491px</top>
+							<width>187px</width>
+							<height>41px</height>
+							<style>font-size:8pt</style>
+							<caption>Avatar</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/043532ca25c74e5bad76ea312f8d0805&quot;
+SetVar [NOMBREPELICULA] &quot;Avatar&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton44">
+							<left>13px</left>
+							<top>491px</top>
+							<width>189px</width>
+							<height>41px</height>
+							<style>font-size:8pt</style>
+							<caption>El Amanecer del Planeta de los Simios</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/4204eccce3d647478962872f78a88517&quot;
+SetVar [NOMBREPELICULA] &quot;El Amanecer del Planeta de los Simios &quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<Container id="Container9">
+							<left>15px</left>
+							<top>150px</top>
+							<width>185px</width>
+							<height>333px</height>
+							<style>background-color:#707070;border-style:solid;border-width:1px</style>
+							<Components>
+								<IFrame id="IFrame11">
+									<left>9px</left>
+									<top>8px</top>
+									<width>160px</width>
+									<height>309px</height>
+									<style>border-color:#000000</style>
+									<source>http://3.bp.blogspot.com/-v5pRW_QLaGM/U0ck-4HtsbI/AAAAAAAAA1k/RXJa4A70-yQ/s275/el-amanecer-del-planeta-de-los-simios.jpg</source>
+								</IFrame>
+							</Components>
+						</Container>
+						<Container id="Container10">
+							<left>212px</left>
+							<top>153px</top>
+							<width>185px</width>
+							<height>333px</height>
+							<style>background-color:#707070;border-style:solid;border-width:1px</style>
+							<Components>
+								<IFrame id="IFrame12">
+									<left>9px</left>
+									<top>8px</top>
+									<width>160px</width>
+									<height>309px</height>
+									<style>border-color:#000000</style>
+									<source>http://3.bp.blogspot.com/_HAuKmRmHm40/S9tb-mWWThI/AAAAAAAABMs/--2iKGeI8qo/s275/avatar.jpg</source>
+								</IFrame>
+							</Components>
+						</Container>
+						<Container id="Container11">
+							<left>409px</left>
+							<top>155px</top>
+							<width>185px</width>
+							<height>333px</height>
+							<style>background-color:#707070;border-style:solid;border-width:1px</style>
+							<Components>
+								<IFrame id="IFrame13">
+									<left>9px</left>
+									<top>8px</top>
+									<width>160px</width>
+									<height>309px</height>
+									<style>border-color:#000000</style>
+									<source>http://4.bp.blogspot.com/-h0ihBRLsPzo/VM3Ne1oDDtI/AAAAAAAABMA/jmF0ZirGI10/s275/los-vengadores-2-la-era-de-ultron.jpg</source>
+								</IFrame>
+							</Components>
+						</Container>
+						<PushButton id="PushButton45">
+							<left>408px</left>
+							<top>491px</top>
+							<width>187px</width>
+							<height>41px</height>
+							<style>font-size:8pt</style>
+							<caption>Los Vengadores 2: La era de ultron</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/e20b824ef1984da080f6cd9a44af5e74&quot;
+SetVar [NOMBREPELICULA] &quot;Los Vengadores 2: La era de ultron&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<Container id="Container12">
+							<left>601px</left>
+							<top>155px</top>
+							<width>185px</width>
+							<height>333px</height>
+							<style>background-color:#707070;border-style:solid;border-width:1px</style>
+							<Components>
+								<IFrame id="IFrame14">
+									<left>9px</left>
+									<top>8px</top>
+									<width>160px</width>
+									<height>309px</height>
+									<style>border-color:#000000</style>
+									<source>http://1.bp.blogspot.com/-iSQnf0mqmXA/TYXGbxYaS7I/AAAAAAAAGMc/wxndLMM7OQA/s275/world-invasion-battle-los-angeles.jpg</source>
+								</IFrame>
+							</Components>
+						</Container>
+						<PushButton id="PushButton46">
+							<left>604px</left>
+							<top>491px</top>
+							<width>187px</width>
+							<height>41px</height>
+							<style>font-size:8pt</style>
+							<caption>Invasión a la Tierra</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/ceb1c051416847f7a9dcffa4ed3112b4&quot;
+SetVar [NOMBREPELICULA] &quot;Invasión a la Tierra&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<Headline id="Headline22">
+							<left>15px</left>
+							<top>103px</top>
+							<width>772px</width>
+							<height>64px</height>
+							<style>color:#E0E0E0</style>
+							<text>Acción</text>
+							<kind>h2</kind>
+						</Headline>
+					</Components>
+				</Page>
+				<Page id="Accion-4">
+					<style>background-color:#383838</style>
+					<background_masterpage>MasterPage</background_masterpage>
+					<Components>
+						<PushButton id="PushButton4">
+							<left>240px</left>
+							<top>454px</top>
+							<width>197px</width>
+							<height>56px</height>
+							<style>font-size:8pt</style>
+							<caption>Pixeles (Pixels)</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/41adc289136040b4af89dc11d44515c4&quot;
+SetVar [NOMBREPELICULA] &quot;Pixeles (Pixels)&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton16">
+							<left>22px</left>
+							<top>453px</top>
+							<width>194px</width>
+							<height>57px</height>
+							<style>font-size:8pt</style>
+							<caption>Terremoto: La falla de san andrés</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/b16f64a10100451ea2cbfde89b9e1207&quot;
+SetVar [NOMBREPELICULA] &quot;Terremoto: La falla de san andrés&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton21">
+							<left>461px</left>
+							<top>457px</top>
+							<width>198px</width>
+							<height>53px</height>
+							<style>font-size:8pt</style>
+							<caption>Perdidos en el Espacio</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/502da4025f3944ac857633de6a3fa4a3&quot;
+SetVar [NOMBREPELICULA] &quot;Perdidos en el Espacio&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton26">
+							<left>677px</left>
+							<top>455px</top>
+							<width>200px</width>
+							<height>56px</height>
+							<style>font-size:8pt</style>
+							<caption>Iron Man 3</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/d4e391f237d44135ab22c8d3c2d0977c&quot;
+SetVar [NOMBREPELICULA] &quot;Iron Man 3&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<Image id="Image1">
+							<left>21px</left>
+							<top>142px</top>
+							<width>197px</width>
+							<height>307px</height>
+							<source>http://2.bp.blogspot.com/-0zuYauS_BjE/VS_TSPNt12I/AAAAAAAAEO8/gXc_TCa-lfI/s275/la-falla-de-san-andres.jpg</source>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/b16f64a10100451ea2cbfde89b9e1207&quot;
+SetVar [NOMBREPELICULA] &quot;Terremoto: La falla de san andrés&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</Image>
+						<Image id="Image14">
+							<left>240px</left>
+							<top>143px</top>
+							<width>199px</width>
+							<height>307px</height>
+							<source>http://4.bp.blogspot.com/-hSfQAPAiOuQ/VRVhQFsOHBI/AAAAAAAATiY/abSPyjztMv4/s275/pixels.jpg</source>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/41adc289136040b4af89dc11d44515c4&quot;
+SetVar [NOMBREPELICULA] &quot;Pixeles (Pixels)&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</Image>
+						<Image id="Image15">
+							<left>458px</left>
+							<top>146px</top>
+							<width>202px</width>
+							<height>308px</height>
+							<source>http://2.bp.blogspot.com/-cqG-vywmzzY/TYf9yf_38oI/AAAAAAAAakM/0LAOkNLcv-k/s275/lost-in-space.jpg</source>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/502da4025f3944ac857633de6a3fa4a3&quot;
+SetVar [NOMBREPELICULA] &quot;Perdidos en el Espacio&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</Image>
+						<Image id="Image16">
+							<left>677px</left>
+							<top>146px</top>
+							<width>202px</width>
+							<height>305px</height>
+							<source>http://2.bp.blogspot.com/-Daps2u6pTWI/UTYuAbEhG9I/AAAAAAAAHn0/IGrpgEoDHOQ/s275/iron-man-3.jpg</source>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/d4e391f237d44135ab22c8d3c2d0977c&quot;
+SetVar [NOMBREPELICULA] &quot;Iron Man 3&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</Image>
+						<Headline id="Headline8">
+							<left>23px</left>
+							<top>110px</top>
+							<width>845px</width>
+							<height>33px</height>
+							<style>color:#E0E0E0;font-size:16pt</style>
+							<text>Acción</text>
+							<kind>h2</kind>
+						</Headline>
+					</Components>
+				</Page>
+				<Page id="Accion-5">
+					<style>background-color:#383838</style>
+					<background_masterpage>MasterPage</background_masterpage>
+					<Components>
+						<PushButton id="PushButton27">
+							<left>240px</left>
+							<top>454px</top>
+							<width>197px</width>
+							<height>56px</height>
+							<style>font-size:8pt</style>
+							<caption>Interstellar</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/2985f48fbb98459f892d47c47ef28dd1&quot;
+SetVar [NOMBREPELICULA] &quot;Interstellar&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton28">
+							<left>22px</left>
+							<top>453px</top>
+							<width>194px</width>
+							<height>57px</height>
+							<style>font-size:8pt</style>
+							<caption>Ant-Man</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/005b4d4730b54ac798c3ee5460fa4ab9&quot;
+SetVar [NOMBREPELICULA] &quot;Ant-Man&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton39">
+							<left>461px</left>
+							<top>457px</top>
+							<width>198px</width>
+							<height>53px</height>
+							<style>font-size:8pt</style>
+							<caption>Los 4 Fantasticos</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/09628e35691a4451ac01469ffedf562f&quot;
+SetVar [NOMBREPELICULA] &quot;Los 4 Fantasticos&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton41">
+							<left>677px</left>
+							<top>455px</top>
+							<width>200px</width>
+							<height>56px</height>
+							<style>font-size:8pt</style>
+							<caption>007 Spectre</caption>
+						</PushButton>
+						<Image id="Image17">
+							<left>21px</left>
+							<top>142px</top>
+							<width>197px</width>
+							<height>307px</height>
+							<source>http://2.bp.blogspot.com/-5qGsvg-D99Q/VUo4yVGh43I/AAAAAAAAWO4/bInSvy9z7k4/s275/ant-man.jpg</source>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/b16f64a10100451ea2cbfde89b9e1207&quot;
+SetVar [NOMBREPELICULA] &quot;Terremoto: La falla de san andrés&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</Image>
+						<Image id="Image18">
+							<left>240px</left>
+							<top>143px</top>
+							<width>199px</width>
+							<height>307px</height>
+							<source>http://1.bp.blogspot.com/-uh9BNFP8fq0/VF1KagXUSQI/AAAAAAAAAX8/yovfsPFjU5g/s275/interstellar.jpg</source>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/41adc289136040b4af89dc11d44515c4&quot;
+SetVar [NOMBREPELICULA] &quot;Pixeles (Pixels)&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</Image>
+						<Image id="Image19">
+							<left>458px</left>
+							<top>146px</top>
+							<width>202px</width>
+							<height>308px</height>
+							<source>http://1.bp.blogspot.com/-EoFte4OhSoE/VUXVkrQUx7I/AAAAAAAABxQ/kkXhHlVdr_4/s275/los-4-fantasticos.jpg</source>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/502da4025f3944ac857633de6a3fa4a3&quot;
+SetVar [NOMBREPELICULA] &quot;Perdidos en el Espacio&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</Image>
+						<Image id="Image20">
+							<left>677px</left>
+							<top>146px</top>
+							<width>202px</width>
+							<height>305px</height>
+							<source>http://2.bp.blogspot.com/-Jh2zKSUHsyQ/VbLPNcBXe6I/AAAAAAAAW1g/uERhw6ZGSGM/s275/007-spectre.jpg</source>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/af79c93a96bb45a49bc56c8855f4abdf&quot;
+SetVar [NOMBREPELICULA] &quot;007 Spectre&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</Image>
+						<Headline id="Headline18">
+							<left>23px</left>
+							<top>110px</top>
+							<width>845px</width>
+							<height>33px</height>
+							<style>color:#E0E0E0;font-size:16pt</style>
+							<text>Acción</text>
+							<kind>h2</kind>
+						</Headline>
+					</Components>
+				</Page>
+				<Page id="Accion-6">
+					<style>background-color:#383838</style>
+					<background_masterpage>MasterPage</background_masterpage>
+					<Components>
+						<PushButton id="PushButton42">
+							<left>240px</left>
+							<top>454px</top>
+							<width>197px</width>
+							<height>56px</height>
+							<style>font-size:8pt</style>
+							<caption>El último tren a Auschwitz</caption>
+							<click>.SetVar [PAGINAIRINSER] &quot;&lt;iframe width=&quot;640&quot;height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/bPabsjGAy8s&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&quot;
+.SetVar [NOMBREPELICULA] &quot;El último tren a Auschwitz&quot;
+
+.OpenDialog &quot;Peliculainser&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton47">
+							<left>22px</left>
+							<top>453px</top>
+							<width>194px</width>
+							<height>57px</height>
+							<style>font-size:8pt</style>
+							<caption>No se aceptan devoluciones</caption>
+							<link>&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/JeItwgy-Pj0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</link>
+							<click>.SetVar [PAGINAIRPOLITICAS] &quot;https://www.youtube.com/watch?v=JeItwgy-Pj0&quot;
+.SetVar [NOMBREPELICULA] &quot;No se aceptan devoluciones&quot;
+
+.OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton48">
+							<left>461px</left>
+							<top>457px</top>
+							<width>198px</width>
+							<height>53px</height>
+							<style>font-size:8pt</style>
+							<caption>Inframundo</caption>
+							<click>.SetVar [PAGINAIRPOLITICAS] &quot;https://www.youtube.com/watch?v=jU2NBOTF7Qg&quot;
+.SetVar [NOMBREPELICULA] &quot;Inframundo&quot;
+
+.OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton49">
+							<left>677px</left>
+							<top>455px</top>
+							<width>200px</width>
+							<height>56px</height>
+							<style>font-size:8pt</style>
+							<caption>La venganza del conde de Montecristo</caption>
+							<click>.SetVar [PAGINAIRPOLITICAS] &quot;https://www.youtube.com/watch?v=wP45qceeJrM&quot;
+.SetVar [NOMBREPELICULA] &quot;La venganza del conde de Montecristo&quot;
+
+.OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<Image id="Image21">
+							<left>21px</left>
+							<top>142px</top>
+							<width>197px</width>
+							<height>307px</height>
+							<source>https://i.ytimg.com/vi/JeItwgy-Pj0/mqdefault.jpg</source>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/b16f64a10100451ea2cbfde89b9e1207&quot;
+SetVar [NOMBREPELICULA] &quot;Terremoto: La falla de san andrés&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</Image>
+						<Image id="Image22">
+							<left>240px</left>
+							<top>143px</top>
+							<width>199px</width>
+							<height>307px</height>
+							<source>https://i.ytimg.com/vi/bPabsjGAy8s/mqdefault.jpg</source>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/41adc289136040b4af89dc11d44515c4&quot;
+SetVar [NOMBREPELICULA] &quot;Pixeles (Pixels)&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</Image>
+						<Image id="Image23">
+							<left>458px</left>
+							<top>146px</top>
+							<width>202px</width>
+							<height>308px</height>
+							<source>https://i.ytimg.com/vi/jU2NBOTF7Qg/mqdefault.jpg</source>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/502da4025f3944ac857633de6a3fa4a3&quot;
+SetVar [NOMBREPELICULA] &quot;Perdidos en el Espacio&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</Image>
+						<Image id="Image24">
+							<left>677px</left>
+							<top>146px</top>
+							<width>202px</width>
+							<height>305px</height>
+							<source>https://i.ytimg.com/vi/wP45qceeJrM/mqdefault.jpg</source>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/af79c93a96bb45a49bc56c8855f4abdf&quot;
+SetVar [NOMBREPELICULA] &quot;007 Spectre&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</Image>
+						<Headline id="Headline24">
+							<left>23px</left>
+							<top>110px</top>
+							<width>845px</width>
+							<height>33px</height>
+							<style>color:#E0E0E0;font-size:16pt</style>
+							<text>Acción</text>
+							<kind>h2</kind>
+						</Headline>
+						<Container id="Container18">
+							<left>-773px</left>
+							<top>7px</top>
+							<width>747px</width>
+							<height>433px</height>
+							<style>border-width:1px;border-style:solid;background-color:#fff;</style>
+							<html>&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/bPabsjGAy8s&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</html>
+						</Container>
+					</Components>
+				</Page>
+				<Page id="Videos">
+					<style>background-color:#383838</style>
+					<background_masterpage>MasterPage</background_masterpage>
+					<Components>
+						<PushButton id="PushButton51">
+							<left>240px</left>
+							<top>454px</top>
+							<width>197px</width>
+							<height>56px</height>
+							<style>font-size:8pt</style>
+							<caption>Videos Tears For Fears</caption>
+							<click>SetVar [PAGINAIRINSER] &quot;files/videos/tears-for-fears-varios/index.html&quot;
+SetVar [NOMBREPELICULA] &quot;Videos Varios - Tears For Fears&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton58">
+							<left>22px</left>
+							<top>453px</top>
+							<width>194px</width>
+							<height>57px</height>
+							<style>font-size:8pt</style>
+							<caption>Tears For Fears - Break It Down Again</caption>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;files/videos/tears-for-fears/index.html&quot;
+SetVar [NOMBREPELICULA] &quot;Tears For Fears - Break It Down Again&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton59">
+							<left>461px</left>
+							<top>457px</top>
+							<width>198px</width>
+							<height>53px</height>
+							<style>font-size:8pt</style>
+							<caption>Inframundo</caption>
+							<click>.SetVar [PAGINAIRPOLITICAS] &quot;https://www.youtube.com/watch?v=jU2NBOTF7Qg&quot;
+.SetVar [NOMBREPELICULA] &quot;Inframundo&quot;
+
+.OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton60">
+							<left>677px</left>
+							<top>455px</top>
+							<width>200px</width>
+							<height>56px</height>
+							<style>font-size:8pt</style>
+							<caption>La venganza del conde de Montecristo</caption>
+							<click>.SetVar [PAGINAIRPOLITICAS] &quot;https://www.youtube.com/watch?v=wP45qceeJrM&quot;
+.SetVar [NOMBREPELICULA] &quot;La venganza del conde de Montecristo&quot;
+
+.OpenDialog &quot;Pelicula&quot;</click>
+						</PushButton>
+						<Image id="Image25">
+							<left>21px</left>
+							<top>142px</top>
+							<width>197px</width>
+							<height>307px</height>
+							<source>http://www.laptopone.com.mx/img/no_imagen.jpg</source>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/b16f64a10100451ea2cbfde89b9e1207&quot;
+SetVar [NOMBREPELICULA] &quot;Terremoto: La falla de san andrés&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</Image>
+						<Image id="Image26">
+							<left>240px</left>
+							<top>143px</top>
+							<width>199px</width>
+							<height>307px</height>
+							<source>http://www.laptopone.com.mx/img/no_imagen.jpg</source>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/41adc289136040b4af89dc11d44515c4&quot;
+SetVar [NOMBREPELICULA] &quot;Pixeles (Pixels)&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</Image>
+						<Image id="Image27">
+							<left>458px</left>
+							<top>146px</top>
+							<width>202px</width>
+							<height>308px</height>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/502da4025f3944ac857633de6a3fa4a3&quot;
+SetVar [NOMBREPELICULA] &quot;Perdidos en el Espacio&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</Image>
+						<Image id="Image28">
+							<left>677px</left>
+							<top>146px</top>
+							<width>202px</width>
+							<height>305px</height>
+							<click>SetVar [PAGINAIRPOLITICAS] &quot;http://player.vimple.ru/iframe/af79c93a96bb45a49bc56c8855f4abdf&quot;
+SetVar [NOMBREPELICULA] &quot;007 Spectre&quot;
+
+OpenDialog &quot;Pelicula&quot;</click>
+						</Image>
+						<Headline id="Headline26">
+							<left>23px</left>
+							<top>110px</top>
+							<width>845px</width>
+							<height>33px</height>
+							<style>color:#E0E0E0;font-size:16pt</style>
+							<text>Videos</text>
+							<kind>h2</kind>
+						</Headline>
+						<Container id="Container20">
+							<left>-773px</left>
+							<top>7px</top>
+							<width>747px</width>
+							<height>433px</height>
+							<style>border-width:1px;border-style:solid;background-color:#fff;</style>
+							<html>&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/bPabsjGAy8s&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</html>
+						</Container>
+					</Components>
+				</Page>
+				<Page id="nosotrosd">
+					<background_masterpage>MasterPage</background_masterpage>
+					<pageenter>HideObject &quot;Image1&quot; &quot;flip&quot; 51
+
+ShowObject &quot;Image1&quot; &quot;flip&quot; 50</pageenter>
+					<Components>
+						<Headline id="Headline11">
+							<left>130px</left>
+							<top>103px</top>
+							<width>657px</width>
+							<height>64px</height>
+							<text>Nosotros</text>
+							<kind>h2</kind>
+						</Headline>
+						<Paragraph id="Paragraph5">
+							<left>38px</left>
+							<top>182px</top>
+							<width>725px</width>
+							<height>135px</height>
+							<style>font-size:10pt</style>
+							<text>&lt;strong&gt;NetMedia7&lt;/strong&gt;.&amp;nbsp;&amp;nbsp;Es una empresa comercial mexicana de entretenimiento que proporciona mediante tarifa plana mensual o anual streaming (flujo) multimedia (principalmente, musica,&amp;nbsp;películas) bajo demanda por Internet. &lt;br&gt;&lt;br&gt;Actualmente esta en un periodo de prueba en su primera version demo y en platicas para tener los permisos necesarios en México.</text>
+						</Paragraph>
+						<Image id="Image10">
+							<left>43px</left>
+							<top>97px</top>
+							<width>61px</width>
+							<height>54px</height>
+							<source>D:\UniServerZ\www\imagenes\users-1-64x64.png</source>
+						</Image>
+						<Image id="Image4">
+							<left>324px</left>
+							<top>488px</top>
+							<width>32px</width>
+							<height>38px</height>
+							<source>D:\UniServerZ\www\imagenes\facebook_1-64x64.png</source>
+						</Image>
+						<Image id="Image5">
+							<left>359px</left>
+							<top>487px</top>
+							<width>33px</width>
+							<height>40px</height>
+							<source>D:\UniServerZ\www\imagenes\google_1-64x64.png</source>
+						</Image>
+						<Image id="Image6">
+							<left>393px</left>
+							<top>488px</top>
+							<width>32px</width>
+							<height>40px</height>
+							<source>D:\UniServerZ\www\imagenes\youtube_1-64x64.png</source>
+						</Image>
+						<Headline id="Headline9">
+							<left>38px</left>
+							<top>423px</top>
+							<width>657px</width>
+							<height>64px</height>
+							<text>Redes sociales</text>
+							<kind>h2</kind>
+						</Headline>
+					</Components>
+				</Page>
+				<Page id="ayudad">
+					<background_masterpage>MasterPage</background_masterpage>
+					<pageenter>HideObject &quot;Image1&quot; &quot;flip&quot; 51
+
+ShowObject &quot;Image1&quot; &quot;flip&quot; 50</pageenter>
+					<Components>
+						<Headline id="Headline1">
+							<left>114px</left>
+							<top>102px</top>
+							<width>644px</width>
+							<height>62px</height>
+							<text>Ayuda</text>
+							<kind>h2</kind>
+						</Headline>
+						<Paragraph id="Paragraph6">
+							<left>113px</left>
+							<top>161px</top>
+							<width>608px</width>
+							<height>198px</height>
+							<style>font-size:10pt</style>
+							<text>Obtén ayuda ¿Algo no funciona? Revisa nuestro centro de soporte antes de nada. Este se encuentra dentro de NetMedia7 en el apartado Ayuda podras ver videos y documentos que te pueden ayudar.</text>
+						</Paragraph>
+						<Image id="Image3">
+							<left>46px</left>
+							<top>98px</top>
+							<width>35px</width>
+							<height>39px</height>
+							<source>D:\UniServerZ\www\imagenes\settig-64x64.png</source>
+						</Image>
+						<Paragraph id="Paragraph9">
+							<left>114px</left>
+							<top>349px</top>
+							<width>608px</width>
+							<height>228px</height>
+							<style>font-size:10pt</style>
+							<text>&lt;strong&gt;NetMedia7. &lt;/strong&gt;&amp;nbsp;Esta programado en HTML5 esto garantiza su estabilidad en cualquier plataforma o sistema operativo presente y futuros. Usted no necesita instalar ningun programa o apps en su equipo de escritorio o equipo portatil como smartphne o tablet unicamente ingrese a su navegador y listo.</text>
+						</Paragraph>
+						<Image id="Image9">
+							<left>52px</left>
+							<top>344px</top>
+							<width>49px</width>
+							<height>58px</height>
+							<source>D:\UniServerZ\www\imagenes\Code-Optimization-64x64.png</source>
+						</Image>
+						<Image id="Image12">
+							<left>51px</left>
+							<top>156px</top>
+							<width>45px</width>
+							<height>43px</height>
+							<source>D:\UniServerZ\www\imagenes\users-1-64x64.png</source>
+						</Image>
+					</Components>
+				</Page>
+				<Page id="politicasd">
+					<background_masterpage>MasterPage</background_masterpage>
+					<pageenter>HideObject &quot;Image1&quot; &quot;flip&quot; 51
+
+ShowObject &quot;Image1&quot; &quot;flip&quot; 50</pageenter>
+					<Components>
+						<Headline id="Headline2">
+							<left>90px</left>
+							<top>108px</top>
+							<width>732px</width>
+							<height>62px</height>
+							<text>Politicas</text>
+							<kind>h2</kind>
+						</Headline>
+						<Image id="Image7">
+							<left>36px</left>
+							<top>104px</top>
+							<width>50px</width>
+							<height>53px</height>
+							<source>D:\UniServerZ\www\imagenes\book-5-64x64.png</source>
+						</Image>
+						<Dropdown id="Dropdown2">
+							<left>33px</left>
+							<top>182px</top>
+							<width>346px</width>
+							<height>42px</height>
+							<caption>Menú Politicas</caption>
+							<items>terminos-de-uso,,politicas-de-privacidad,,copyright,,</items>
+							<variable>[POLITICAS]</variable>
+							<change>GotoPage &quot;[POLITICAS]&quot;</change>
+						</Dropdown>
+					</Components>
+				</Page>
+				<Page id="copyright">
+					<background_masterpage>MasterPage</background_masterpage>
+					<Components>
+						<Headline id="Headline15">
+							<left>28px</left>
+							<top>157px</top>
+							<width>729px</width>
+							<height>74px</height>
+							<text>Copyright</text>
+							<kind>h2</kind>
+						</Headline>
+						<PushButton id="PushButton8">
+							<left>383px</left>
+							<top>95px</top>
+							<width>373px</width>
+							<height>52px</height>
+							<caption>Regresar Politicas</caption>
+							<icon>glyphicon-share-alt</icon>
+							<click>GotoPage &quot;politicas&quot;</click>
+						</PushButton>
+					</Components>
+				</Page>
+				<Page id="terminos-de-uso">
+					<background_masterpage>MasterPage</background_masterpage>
+					<Components>
+						<Headline id="Headline7">
+							<left>28px</left>
+							<top>148px</top>
+							<width>710px</width>
+							<height>63px</height>
+							<text>Terminos de uso</text>
+							<kind>h2</kind>
+						</Headline>
+						<PushButton id="PushButton9">
+							<left>383px</left>
+							<top>95px</top>
+							<width>373px</width>
+							<height>52px</height>
+							<caption>Regresar Politicas</caption>
+							<icon>glyphicon-share-alt</icon>
+							<click>GotoPage &quot;politicas&quot;</click>
+						</PushButton>
+					</Components>
+				</Page>
+				<Page id="politicas-de-privacidad">
+					<background_masterpage>MasterPage</background_masterpage>
+					<Components>
+						<Headline id="Headline14">
+							<left>20px</left>
+							<top>154px</top>
+							<width>708px</width>
+							<height>105px</height>
+							<text>Politicas de privacidad</text>
+							<kind>h2</kind>
+						</Headline>
+						<PushButton id="PushButton10">
+							<left>383px</left>
+							<top>95px</top>
+							<width>373px</width>
+							<height>52px</height>
+							<caption>Regresar Politicas</caption>
+							<icon>glyphicon-share-alt</icon>
+							<click>GotoPage &quot;politicas&quot;</click>
+						</PushButton>
+					</Components>
+				</Page>
+				<Page id="preciod">
+					<background_masterpage>MasterPage</background_masterpage>
+					<pageenter>HideObject &quot;Image1&quot; &quot;flip&quot; 51
+
+ShowObject &quot;Image1&quot; &quot;flip&quot; 50</pageenter>
+					<Components>
+						<Headline id="Headline6">
+							<left>99px</left>
+							<top>98px</top>
+							<width>682px</width>
+							<height>70px</height>
+							<text>Precios</text>
+							<kind>h2</kind>
+						</Headline>
+						<Image id="Image8">
+							<left>25px</left>
+							<top>96px</top>
+							<width>74px</width>
+							<height>69px</height>
+							<source>D:\UniServerZ\www\imagenes\rocket-64x64.png</source>
+						</Image>
+						<Paragraph id="Paragraph3">
+							<left>44px</left>
+							<top>170px</top>
+							<width>743px</width>
+							<height>97px</height>
+							<style>font-size:10pt</style>
+							<text>NetMedia7. Contamos con&amp;nbsp;3 planes 1 Mes, 6 Meses, 1 Año. Si quieres contratar un plan con nosotros oprime el boton&amp;nbsp; &lt;strong&gt;Crear &lt;/strong&gt;&amp;nbsp;Gracias.</text>
+						</Paragraph>
+						<Headline id="Headline5">
+							<left>134px</left>
+							<top>273px</top>
+							<width>169px</width>
+							<height>156px</height>
+						</Headline>
+						<Headline id="Headline10">
+							<left>46px</left>
+							<top>260px</top>
+							<width>245px</width>
+							<height>50px</height>
+							<style>font-size:14pt</style>
+							<text>1 Mes</text>
+						</Headline>
+						<Headline id="Headline12">
+							<left>304px</left>
+							<top>259px</top>
+							<width>277px</width>
+							<height>46px</height>
+							<style>font-size:14pt</style>
+							<text>6 Meses</text>
+						</Headline>
+						<Headline id="Headline13">
+							<left>601px</left>
+							<top>259px</top>
+							<width>176px</width>
+							<height>45px</height>
+							<style>font-size:14pt</style>
+							<text>1 Año</text>
+						</Headline>
+						<Paragraph id="Paragraph4">
+							<left>38px</left>
+							<top>389px</top>
+							<width>743px</width>
+							<height>145px</height>
+							<style>font-size:9pt</style>
+							<text>Si aun no estas convencido visita nuestra demo oprimiendo el boton&amp;nbsp; &lt;strong&gt;Menu&lt;/strong&gt;&amp;nbsp; despues el boton Demo&amp;nbsp;.&amp;nbsp;&lt;br&gt;&lt;br&gt; NetMedia7 cuenta con varias formas de pago Efectivo deposito bancario Tiendas&amp;nbsp;OXXO, Tarjeta de credito, Paypal.&amp;nbsp;</text>
+						</Paragraph>
+						<Container id="Container17">
+							<left>520px</left>
+							<top>542px</top>
+							<width>279px</width>
+							<height>57px</height>
+							<style>border-width:1px;border-style:solid;background-color:#fff;</style>
+						</Container>
+					</Components>
+				</Page>
+				<Page id="prueba">
+					<Components>
+						<PushButton id="PushButton2">
+							<left>684px</left>
+							<top>139px</top>
+							<width>27px</width>
+							<height>45px</height>
+							<click>RemoveItem &quot;[TIEMPOLIMITE]&quot;
+RemoveItem &quot;[TIEMPOLIMITEFIN]&quot;
+
+SetVar [TIEMPOLIMITE] 0
+SetVar [TIEMPOLIMITEFIN] 0</click>
+						</PushButton>
+						<Combobox id="Combobox1">
+							<left>197px</left>
+							<top>23px</top>
+							<width>293px</width>
+							<height>33px</height>
+							<items>Terminos de uso,,Politicas de privacidad,,Copyright,,Copyright Formulario de reclamo</items>
+							<multi_select>False</multi_select>
+						</Combobox>
+						<PushButton id="PushButton33">
+							<left>166px</left>
+							<top>215px</top>
+							<width>40px</width>
+							<height>40px</height>
+							<icon>glyphicon-align-justify</icon>
+							<click>.PlaySound &quot;C:\xampp\htdocs\plantilla4\sound\click.mp3&quot; false
+
+OpenDialog &quot;ventanamenu&quot;</click>
+						</PushButton>
+						<Combobox id="Combomenu">
+							<left>117px</left>
+							<top>349px</top>
+							<width>109px</width>
+							<height>42px</height>
+							<items>[PAGINA1],[PAGINA2],[PAGINA3],[PAGINA4],[PAGINA5],[PAGINA6],,Inicio,Demo,Nosotros,Soporte,Politicas,Precio</items>
+							<variable>[PAGINAIR]</variable>
+							<init_value>Inicio</init_value>
+							<multi_select>False</multi_select>
+							<change>GotoPage &quot;[PAGINAIR]&quot;</change>
+						</Combobox>
+						<PushButton id="PushButton7">
+							<left>168px</left>
+							<top>300px</top>
+							<width>63px</width>
+							<height>29px</height>
+							<click>SetVar [PAGINA1] &quot;Inicio&quot;
+SetVar [PAGINA2] &quot;Demo&quot;
+SetVar [PAGINA3] &quot;Nosotros&quot;
+SetVar [PAGINA4] &quot;Soporte&quot;
+SetVar [PAGINA5] &quot;Politicas&quot;
+SetVar [PAGINA6] &quot;Precio&quot;</click>
+						</PushButton>
+						<PushButton id="PushButton12">
+							<left>433px</left>
+							<top>108px</top>
+							<width>87px</width>
+							<height>55px</height>
+							<caption>Recuperar&lt;br&gt;datos color</caption>
+							<click>GetItem &quot;colorpaginanet&quot; [COLORPAGINA]</click>
+						</PushButton>
+						<PushButton id="PushButton11">
+							<left>435px</left>
+							<top>171px</top>
+							<width>85px</width>
+							<height>70px</height>
+							<caption>guardar&lt;br&gt;datos color</caption>
+							<click>SetItem &quot;colorpaginanet&quot; [COLORPAGINA]</click>
+						</PushButton>
+						<PushButton id="Imagelogo">
+							<left>386px</left>
+							<top>274px</top>
+							<width>254px</width>
+							<height>76px</height>
+							<caption>Usuarios</caption>
+							<link>user/index.html</link>
+							<icon>glyphicon-user</icon>
+							<size>small</size>
+						</PushButton>
+						<PushButton id="PushButton1">
+							<left>567px</left>
+							<top>18px</top>
+							<width>253px</width>
+							<height>74px</height>
+							<caption>Crear</caption>
+							<icon>glyphicon-th-list</icon>
+							<size>small</size>
+							<click>GotoPage &quot;pass&quot;</click>
+						</PushButton>
+					</Components>
+				</Page>
+			</Components>
+		</PageList>
+		<PageList name="Master">
+			<Components>
+				<Page id="MasterPage">
+					<Components>
+						<Rectangle id="Rectangle3">
+							<left>-1px</left>
+							<top>523px</top>
+							<width>902px</width>
+							<height>77px</height>
+							<style>fill:#000000;stroke:black;stroke-width:1px</style>
+							<corner_radius>0</corner_radius>
+						</Rectangle>
+						<Rectangle id="Rectangle1">
+							<left>0px</left>
+							<top>0px</top>
+							<width>902px</width>
+							<height>104px</height>
+							<style>fill:#000000;stroke:black;stroke-width:1px</style>
+							<corner_radius>0</corner_radius>
+						</Rectangle>
+						<Dropdown id="Dropdown1">
+							<left>246px</left>
+							<top>14px</top>
+							<width>293px</width>
+							<height>76px</height>
+							<style>font-size:20pt;background-color:#707070</style>
+							<caption>Categorias</caption>
+							<items>Videos,Extrenos,Accion,Aventura,Ciencia-ficcion,Comedia,Drama,Belico,Fantacia,Infantil,Musical,Romance,Terror,Suspenso</items>
+							<variable>[PAGINAIR]</variable>
+							<init_value>Inicio</init_value>
+							<change>GotoPage &quot;[PAGINAIR]&quot;</change>
+							<click>GotoPage &quot;[PAGINAIR]&quot;</click>
+						</Dropdown>
+						<PushButton id="PushButton53">
+							<left>5px</left>
+							<top>530px</top>
+							<width>259px</width>
+							<height>62px</height>
+							<icon>glyphicon-chevron-left</icon>
+							<click>GotoPrevPage</click>
+						</PushButton>
+						<PushButton id="PushButton52">
+							<left>636px</left>
+							<top>531px</top>
+							<width>258px</width>
+							<height>62px</height>
+							<icon>glyphicon-chevron-right</icon>
+							<click>GotoNextPage</click>
+						</PushButton>
+						<Dropdown id="Dropdown3">
+							<left>605px</left>
+							<top>13px</top>
+							<width>252px</width>
+							<height>76px</height>
+							<style>font-size:20pt;background-color:#707070</style>
+							<caption>Menú</caption>
+							<items>inicio,demo,apps,nosotros,ayuda,politicas,precio</items>
+							<variable>[PAGINAIR]</variable>
+							<init_value>Inicio</init_value>
+							<change>GotoPage &quot;[PAGINAIR]&quot;</change>
+							<click>GotoPage &quot;[PAGINAIR]&quot;</click>
+						</Dropdown>
+						<Image id="Image13">
+							<left>66px</left>
+							<top>4px</top>
+							<width>107px</width>
+							<height>97px</height>
+							<source>D:\UniServerZ\www\imagenes\Movies and Popcorn.png</source>
+						</Image>
+					</Components>
+				</Page>
+			</Components>
+		</PageList>
+		<PageList name="Dialog">
+			<Components>
+				<Page id="ventanaacercade">
+					<Components>
+						<DialogContainer id="DialogContainer1">
+							<left>5px</left>
+							<top>5px</top>
+							<width>753px</width>
+							<height>578px</height>
+							<enabled>False</enabled>
+							<close_button>False</close_button>
+							<Components>
+								<Paragraph id="ParagraphWWW">
+									<left>0px</left>
+									<top>144px</top>
+									<width>752px</width>
+									<height>25px</height>
+									<style>text-align:center</style>
+									<text>www.a1web.com.mx</text>
+								</Paragraph>
+								<Paragraph id="ParagraphPlanlla">
+									<left>1px</left>
+									<top>109px</top>
+									<width>751px</width>
+									<height>27px</height>
+									<style>text-align:center</style>
+									<text>&lt;strong&gt;Media 7&lt;/strong&gt;</text>
+								</Paragraph>
+								<Paragraph id="ParagraphProgramador">
+									<left>1px</left>
+									<top>214px</top>
+									<width>751px</width>
+									<height>27px</height>
+									<style>text-align:center</style>
+									<text>&lt;STRONG&gt;Programador:&lt;/STRONG&gt;</text>
+								</Paragraph>
+								<Paragraph id="ParagraphDanielL">
+									<left>1px</left>
+									<top>239px</top>
+									<width>751px</width>
+									<height>29px</height>
+									<style>text-align:center</style>
+									<text>Daniel López P.</text>
+								</Paragraph>
+								<Paragraph id="ParagraphInfo">
+									<left>0px</left>
+									<top>278px</top>
+									<width>753px</width>
+									<height>25px</height>
+									<style>text-align:center</style>
+									<text>&lt;STRONG&gt;Información:&lt;/STRONG&gt;</text>
+								</Paragraph>
+								<Paragraph id="ParagraphPlantillaBase">
+									<left>1px</left>
+									<top>326px</top>
+									<width>751px</width>
+									<height>30px</height>
+									<style>text-align:center</style>
+									<text>Auto Editable</text>
+								</Paragraph>
+								<Paragraph id="ParagraphNumeroPlantilla">
+									<left>1px</left>
+									<top>455px</top>
+									<width>751px</width>
+									<height>65px</height>
+									<style>text-align:center</style>
+									<text>Numero:&lt;br&gt;MEDIA-Driver</text>
+								</Paragraph>
+								<Paragraph id="ParagraphVersion">
+									<left>1px</left>
+									<top>301px</top>
+									<width>751px</width>
+									<height>27px</height>
+									<style>text-align:center</style>
+									<text>Version 5.0</text>
+								</Paragraph>
+								<Paragraph id="ParagraphPlantillaAutoEditable">
+									<left>1px</left>
+									<top>176px</top>
+									<width>751px</width>
+									<height>31px</height>
+									<style>text-align:center</style>
+								</Paragraph>
+								<Paragraph id="Paragraph16">
+									<left>1px</left>
+									<top>374px</top>
+									<width>751px</width>
+									<height>30px</height>
+									<style>text-align:center</style>
+									<text>&lt;STRONG&gt;Plantilla Tipo&lt;/STRONG&gt;</text>
+								</Paragraph>
+								<Paragraph id="Paragraph17">
+									<left>0px</left>
+									<top>396px</top>
+									<width>753px</width>
+									<height>40px</height>
+									<style>text-align:center</style>
+									<text>Responsivo</text>
+								</Paragraph>
+								<PushButton id="PushButton6">
+									<left>651px</left>
+									<top>11px</top>
+									<width>64px</width>
+									<height>55px</height>
+									<icon>glyphicon-remove</icon>
+									<click>CloseDialog</click>
+								</PushButton>
+								<Headline id="Headline4">
+									<left>82px</left>
+									<top>20px</top>
+									<width>584px</width>
+									<height>61px</height>
+									<style>text-align:center</style>
+									<text>Acerca de...</text>
+									<kind>h2</kind>
+								</Headline>
+							</Components>
+						</DialogContainer>
+					</Components>
+				</Page>
+				<Page id="config">
+					<Components>
+						<DialogContainer id="DialogContainer2">
+							<left>130px</left>
+							<top>-4px</top>
+							<width>560px</width>
+							<height>519px</height>
+							<close_button>False</close_button>
+							<Components>
+								<Combobox id="Combobox3">
+									<left>169px</left>
+									<top>429px</top>
+									<width>200px</width>
+									<height>25px</height>
+									<init_value>Idioma</init_value>
+									<multi_select>False</multi_select>
+								</Combobox>
+							</Components>
+						</DialogContainer>
+						<PushButton id="PushButton15">
+							<left>573px</left>
+							<top>41px</top>
+							<width>73px</width>
+							<height>55px</height>
+							<icon>glyphicon-remove</icon>
+							<click>CloseDialog</click>
+						</PushButton>
+						<Headline id="Headline16">
+							<left>269px</left>
+							<top>40px</top>
+							<width>265px</width>
+							<height>45px</height>
+							<style>font-size:11pt;text-align:center</style>
+							<text>Configuración</text>
+							<kind>h2</kind>
+						</Headline>
+						<Paragraph id="Paragraph7">
+							<left>227px</left>
+							<top>133px</top>
+							<width>373px</width>
+							<height>25px</height>
+							<style>text-align:center</style>
+							<text>Color Pagina</text>
+						</Paragraph>
+						<PushButton id="PushButton5">
+							<left>301px</left>
+							<top>297px</top>
+							<width>202px</width>
+							<height>44px</height>
+							<style>font-size:8pt</style>
+							<caption>Parar</caption>
+							<icon>glyphicon-lock</icon>
+							<click>TimerStop &quot;Timer1&quot;
+
+TimerStop &quot;Timer2&quot;
+
+.jsAlert &quot;Desconexion detenida&quot;
+
+AlertBox &quot;Desconectar Timer&quot; &quot;Timer Stop&quot; &quot;&quot;</click>
+						</PushButton>
+						<Paragraph id="Paragraph10">
+							<left>212px</left>
+							<top>266px</top>
+							<width>404px</width>
+							<height>25px</height>
+							<style>text-align:center</style>
+							<text>Parar tiempo</text>
+						</Paragraph>
+						<PushButton id="PushButton13">
+							<left>307px</left>
+							<top>203px</top>
+							<width>200px</width>
+							<height>44px</height>
+							<style>font-size:8pt</style>
+							<caption>Guardar</caption>
+							<icon>glyphicon-floppy-disk</icon>
+							<click>SetItem &quot;colorpaginanet&quot; [COLORPAGINA]
+
+AlertBox &quot;Color&quot; &quot;Color Guardado [COLORPAGINA]&quot; &quot;&quot;</click>
+						</PushButton>
+						<Paragraph id="Paragraph18">
+							<left>289px</left>
+							<top>391px</top>
+							<width>240px</width>
+							<height>25px</height>
+							<style>text-align:center</style>
+							<text>Idioma</text>
+						</Paragraph>
+						<Combobox id="Combobox4">
+							<left>308px</left>
+							<top>164px</top>
+							<width>199px</width>
+							<height>24px</height>
+							<style>font-size:8pt</style>
+							<items>grey,red,blue,yellow,white</items>
+							<variable>[COLORPAGINA]</variable>
+							<multi_select>False</multi_select>
+							<change>SetItem &quot;colorpaginanet&quot; [COLORPAGINA]
+
+AlertBox &quot;Color&quot; &quot;Color Guardado [COLORPAGINA]&quot; &quot;&quot;</change>
+						</Combobox>
+					</Components>
+				</Page>
+				<Page id="Pelicula">
+					<Components>
+						<DialogContainer id="DialogContainer3">
+							<left>2px</left>
+							<top>-4px</top>
+							<width>894px</width>
+							<height>579px</height>
+							<style>background-color:#FFFFFF</style>
+							<close_button>False</close_button>
+							<Components>
+								<PushButton id="PushButton61">
+									<left>790px</left>
+									<top>18px</top>
+									<width>26px</width>
+									<height>55px</height>
+								</PushButton>
+							</Components>
+						</DialogContainer>
+						<IFrame id="IFrame6">
+							<left>9px</left>
+							<top>77px</top>
+							<width>869px</width>
+							<height>490px</height>
+							<source>[PAGINAIRPOLITICAS]</source>
+						</IFrame>
+						<Headline id="Headline19">
+							<left>14px</left>
+							<top>27px</top>
+							<width>419px</width>
+							<height>45px</height>
+							<style>color:#383838;font-size:16pt;text-align:left</style>
+							<text>[NOMBREPELICULA]</text>
+							<kind>h2</kind>
+							<click>OpenDialog &quot;Pelicula&quot;</click>
+						</Headline>
+						<PushButton id="PushButton25">
+							<left>714px</left>
+							<top>15px</top>
+							<width>73px</width>
+							<height>55px</height>
+							<icon>glyphicon-remove</icon>
+							<click>CloseDialog</click>
+						</PushButton>
+					</Components>
+				</Page>
+				<Page id="Peliculainser">
+					<Components>
+						<DialogContainer id="DialogContainer4">
+							<left>13px</left>
+							<top>-4px</top>
+							<width>778px</width>
+							<height>579px</height>
+							<style>background-color:#383838</style>
+							<close_button>False</close_button>
+							<Components>
+								<Container id="Container19">
+									<left>19px</left>
+									<top>77px</top>
+									<width>741px</width>
+									<height>478px</height>
+									<style>border-width:1px;border-style:solid;background-color:#fff;</style>
+									<html>[PAGINAIRINSER]</html>
+								</Container>
+							</Components>
+						</DialogContainer>
+						<PushButton id="PushButton50">
+							<left>670px</left>
+							<top>15px</top>
+							<width>73px</width>
+							<height>55px</height>
+							<icon>glyphicon-remove</icon>
+							<click>CloseDialog</click>
+						</PushButton>
+						<Headline id="Headline25">
+							<left>39px</left>
+							<top>29px</top>
+							<width>623px</width>
+							<height>45px</height>
+							<style>color:#707070;font-size:16pt;text-align:left</style>
+							<text>[NOMBREPELICULA]</text>
+							<kind>h2</kind>
+						</Headline>
+					</Components>
+				</Page>
+				<Page id="ventanamenu">
+					<Components>
+						<DialogContainer id="DialogContainer16">
+							<left>0px</left>
+							<top>0px</top>
+							<width>0px</width>
+							<height>8px</height>
+							<close_button>False</close_button>
+						</DialogContainer>
+						<PushButton id="PushButton34">
+							<left>7px</left>
+							<top>150px</top>
+							<width>383px</width>
+							<height>104px</height>
+							<caption>Demo</caption>
+							<icon>glyphicon-film</icon>
+							<click>.PlaySound &quot;C:\xampp\htdocs\plantilla4\sound\boton2.mp3&quot; false
+.AlertBox &quot;Contraseña&quot; &quot;Para entrar a la demostración escriba: User: demo Pass: demo&quot; &quot;&quot;
+
+jsAlert &quot;Para entrar a la demostración escriba: Usuario: demo Password: demo gracias.&quot;
+
+GetItem &quot;TIEMPOLIMITE&quot; [TIEMPOLIMITE]
+
+SetVar [NUM] 0
+SetVar [TIMER] 0
+
+
+GotoPage &quot;Demo&quot;
+
+CloseDialog</click>
+						</PushButton>
+						<PushButton id="PushButton35">
+							<left>8px</left>
+							<top>47px</top>
+							<width>381px</width>
+							<height>104px</height>
+							<caption>Inicio</caption>
+							<icon>glyphicon-home</icon>
+							<click>.PlaySound &quot;C:\xampp\htdocs\plantilla4\sound\boton1.mp3&quot; false
+GotoPage &quot;Inicio&quot;
+
+
+CloseDialog</click>
+						</PushButton>
+						<PushButton id="PushButton36">
+							<left>7px</left>
+							<top>249px</top>
+							<width>384px</width>
+							<height>104px</height>
+							<caption>Nosotros</caption>
+							<icon>glyphicon-wrench</icon>
+							<click>.PlaySound &quot;C:\xampp\htdocs\plantilla4\sound\boton3.mp3&quot; false
+
+GotoPage &quot;Nosotros&quot;
+
+CloseDialog</click>
+						</PushButton>
+						<PushButton id="PushButton37">
+							<left>8px</left>
+							<top>352px</top>
+							<width>383px</width>
+							<height>104px</height>
+							<caption>Soporte</caption>
+							<icon>glyphicon-book</icon>
+							<click>.PlaySound &quot;C:\xampp\htdocs\plantilla4\sound\boton4.mp3&quot; false
+
+GotoPage &quot;Soporte&quot;
+
+CloseDialog</click>
+						</PushButton>
+						<PushButton id="PushButton38">
+							<left>7px</left>
+							<top>455px</top>
+							<width>384px</width>
+							<height>105px</height>
+							<caption>Precios</caption>
+							<icon>glyphicon-th</icon>
+							<click>.PlaySound &quot;C:\xampp\htdocs\plantilla4\sound\boton5.mp3&quot; false
+
+GotoPage &quot;Precio&quot;
+
+CloseDialog</click>
+						</PushButton>
+						<PushButton id="PushButton40">
+							<left>8px</left>
+							<top>8px</top>
+							<width>40px</width>
+							<height>40px</height>
+							<icon>glyphicon-align-justify</icon>
+							<click>.PlaySound &quot;C:\xampp\htdocs\plantilla4\sound\click.mp3&quot; false
+
+CloseDialog</click>
+						</PushButton>
+						<PushButton id="PushButton3">
+							<left>193px</left>
+							<top>8px</top>
+							<width>195px</width>
+							<height>40px</height>
+							<caption>Cerrar</caption>
+							<icon>glyphicon-remove</icon>
+							<click>CloseDialog</click>
+						</PushButton>
+					</Components>
+				</Page>
+			</Components>
+		</PageList>
+	</Components>
+</Application>
